@@ -1,0 +1,43 @@
+<section class="d-flex justify-content-center align-items-center page-bg">
+  <div class="container text-center">
+    <h1 class="mt-4 text-uppercase">portfolio component</h1>
+    <div class="star my-4">
+      <span><i class="fa-solid fa-star"></i></span>
+    </div>
+    <div (click)="getSrc($event)" class="row g-4 mt-5 imgs-container">
+      <div class="col-md-4">
+        <div class="img">
+          <img class="w-100" src="/imgs/poert1.png" alt="" />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="img">
+          <img class="w-100" src="/imgs/port2.png" alt="" />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="img">
+          <img class="w-100" src="/imgs/port3.png" alt="" />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="img">
+          <img class="w-100" src="/imgs/poert1.png" alt="" />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="img">
+          <img class="w-100" src="/imgs/port2.png" alt="" />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="img">
+          <img class="w-100" src="/imgs/port3.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div [class.d-flex]="clicked" class="img-layer" (click)="closeImg($event)">
+  <img [src]="imgSrc" class="openedImg" alt="" />
+</div>

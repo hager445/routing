@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  behavior: smooth;
+}
+.star {
+  position: relative;
+  color: #fff;
+}
+.star::after {
+  display: inline-block;
+  content: "";
+  background-color: rgb(255, 255, 255);
+  width: 10%;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 55%;
+}
+.star::before {
+  content: "";
+  display: inline-block;
+
+  background-color: rgb(255, 255, 255);
+  width: 10%;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 55%;
+}
+.orange-bg {
+  background-color: #ffa74f;
+}
+.page-bg {
+  margin-top: 80px;
+  padding: 100px 0;
+}
